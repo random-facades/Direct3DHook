@@ -17,6 +17,7 @@
 
     public class ScreenAlignedQuadRenderer : RendererBase
     {
+        /*
         string shaderCodeVertexIn = @"Texture2D<float4> Texture0 : register(t0);
 SamplerState Sampler : register(s0);
 
@@ -54,7 +55,7 @@ float4 PSMain(PixelIn input) : SV_Target
     return Texture0.Sample(Sampler, input.UV);
 }
 ";
-
+        */
 
 
         string shaderCode = @"Texture2D<float4> Texture0 : register(t0);
@@ -100,11 +101,11 @@ float4 PSMain(PixelIn input) : SV_Target
         SamplerState linearSampleState;
 
         // The vertex layout for the IA
-        InputLayout vertexLayout;
+        //InputLayout vertexLayout;
         // The vertex buffer
-        Buffer vertexBuffer;
+        //Buffer vertexBuffer;
         // The vertex buffer binding
-        VertexBufferBinding vertexBinding;
+        //VertexBufferBinding vertexBinding;
 
         public bool UseLinearSampling { get; set; }
         public ShaderResourceView ShaderResource { get; set; }

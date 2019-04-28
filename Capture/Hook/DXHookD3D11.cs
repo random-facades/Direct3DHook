@@ -90,7 +90,7 @@ namespace Capture.Hook
         SwapChain _swapChain;
         SharpDX.Windows.RenderForm _renderForm;
         Texture2D _resolvedRTShared;
-        SharpDX.DXGI.KeyedMutex _resolvedRTSharedKeyedMutex;
+        //SharpDX.DXGI.KeyedMutex _resolvedRTSharedKeyedMutex;
         ShaderResourceView _resolvedSRV;
         Capture.Hook.DX11.ScreenAlignedQuadRenderer _saQuad;
         Texture2D _finalRT;

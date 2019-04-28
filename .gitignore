@@ -3,3 +3,5 @@
 Capture/obj
 TestScreenshot/obj
 bin
+packages
+.vs
